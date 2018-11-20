@@ -1,0 +1,29 @@
+
+package javaapplication12;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+public class JavaApplication12 {
+
+    public static void main(String[] args) {
+       int q[]={3,9,15,20,65,23,18,4,2,14,21,};
+       
+       ArrayList<Integer> odd = new ArrayList<Integer>();
+       ArrayList<Integer> even = new ArrayList<Integer>();
+               
+for(int a=0;a<q.length;a++){  
+    if(q[a]%2!=0){  
+        odd.add (q[a]);
+}
+    else if (q [a] % 2 == 0) {
+        even.add (q[a]);    
+    }
+    }
+        System.out.println("ELEMENTS:"+"\t"+Arrays.toString(q));
+            System.out.println("Odd\tEven");
+            for(int x = 0; x < 5 ; x++){
+                System.out.println(odd.get(x)+"\t"+even.get(x));
+            }
+        }
+}
+
